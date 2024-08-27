@@ -19,7 +19,7 @@ const App = () => {
       />
       <div className="container w-full h-full flex flex-col items-center justify-center">
         <GradualSpacing
-          className="font-display text-center text-4xl font-bold tracking-[-0.1em]  md:text-7xl md:leading-[5rem] text-wrap"
+          className="font-display text-center text-2xl font-bold tracking-[-0.1em]  md:text-6xl lg:text-7xl  md:leading-[5rem] text-wrap"
           text="Stay Tuned for What's Next!"
         />
 
