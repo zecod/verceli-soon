@@ -1,0 +1,39 @@
+/* Geist Sans Variable Font */
+@font-face {
+  font-family: "GeistSans";
+  src: url("https://github.com/vercel/geist-font/releases/download/latest/GeistSans.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* Geist Sans Non-Variable Font */
+@font-face {
+  font-family: "GeistSansNonVariable";
+  src: url("https://github.com/vercel/geist-font/releases/download/latest/GeistSansNonVariable.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* Geist Mono Variable Font */
+@font-face {
+  font-family: "GeistMono";
+  src: url("https://github.com/vercel/geist-font/releases/download/latest/GeistMono.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* Geist Mono Non-Variable Font */
+@font-face {
+  font-family: "GeistMonoNonVariable";
+  src: url("https://github.com/vercel/geist-font/releases/download/latest/GeistMonoNonVariable.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+main {
+  font-family: "GeistSans", sans-serif;
+}

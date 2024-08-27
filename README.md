@@ -1,0 +1,1 @@
+helloWorld("conosle.log") // WTF??
