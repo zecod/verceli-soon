@@ -37,3 +37,7 @@
 main {
   font-family: "GeistSans", sans-serif;
 }
+
+body {
+  background-color: #000;
+}
