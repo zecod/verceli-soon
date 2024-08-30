@@ -47,3 +47,8 @@ body {
   font-weight: 100;
   font-style: normal;
 }
+
+.text-apple {
+  font-family: "GeistSans", sans-serif; /* Replace with the correct font stack */
+  color: #a1a1a1; /* Text color */
+}
