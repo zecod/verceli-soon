@@ -41,3 +41,9 @@ main {
 body {
   background-color: #000;
 }
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
