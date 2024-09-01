@@ -12,19 +12,19 @@ import GradualSpacing from "@/components/magicui/gradual-spacing";
 
 const Content = () => {
   return (
-    <div className="container max-w-[1200px]">
+    <div className="container max-w-[1200px] py-5">
       <div className="border p-10 relative md:h-[400px] flex flex-col items-center justify-center">
         <Plus className="absolute -top-3 -left-3 text-zinc-600 " />
         <Plus className="absolute -bottom-3 -right-3 text-zinc-600 " />
         <GradualSpacing
-          className="font-display text-center text-3xl font-bold tracking-[-0.1em]  md:text-6xl lg:text-7xl  md:leading-[5rem] text-wrap"
+          className="font-display text-center text-xl font-bold tracking-[-0.1em]  md:text-6xl lg:text-7xl  md:leading-[5rem] text-wrap"
           text="Stay Tuned for What's Next!"
         />
 
         <div className="w-full flex justify-center">
           <BlurFade delay={0.25 * 2} inView>
             <HyperText
-              className="text-xl font-bold text-muted-foreground "
+              className="text-lg md:text-xl font-bold text-muted-foreground "
               text="Coming soon..."
             />
           </BlurFade>
@@ -95,8 +95,8 @@ export const Hero = () => {
   }, []);
 
   return (
-    <main className="w-screen h-screen bg-black text-white relative">
-      <div className="container w-full h-full flex flex-col items-center justify-center">
+    <main className="md:w-screen md:h-screen bg-black text-white relative">
+      <div className="container w-full h-full flex flex-col md:items-center md:justify-center">
         {showIntro ? <Intro /> : <Content />}
       </div>
     </main>

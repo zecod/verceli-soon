@@ -1,6 +1,6 @@
 export const Intro = () => {
   return (
-    <div className="w-screen h-screen flex items-center justify-center gap-2 absolute bg-black">
+    <div className="w-screen h-screen flex items-center justify-center gap-2 absolute bg-black overflow-hidden">
       <div className="size-10 svg-animation">
         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
