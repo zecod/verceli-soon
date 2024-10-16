@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 
@@ -30,40 +28,35 @@ export default function HyperText({
 }: HyperTextProps) {
   const [displayText, setDisplayText] = useState(text.split(""));
   const [trigger, setTrigger] = useState(false);
-  const interations = useRef(0);
+  const iterations = useRef(0); // Fixed typo
   const isFirstRender = useRef(true);
 
   const triggerAnimation = () => {
-    interations.current = 0;
+    iterations.current = 0;
     setTrigger(true);
   };
 
   useEffect(() => {
-    const interval = setInterval(
-      () => {
-        if (!animateOnLoad && isFirstRender.current) {
-          clearInterval(interval);
-          isFirstRender.current = false;
-          return;
-        }
-        if (interations.current < text.length) {
-          setDisplayText((t) =>
-            t.map((l, i) =>
-              l === " "
-                ? l
-                : i <= interations.current
-                  ? text[i]
-                  : alphabets[getRandomInt(26)],
-            ),
-          );
-          interations.current = interations.current + 0.1;
-        } else {
-          setTrigger(false);
-          clearInterval(interval);
-        }
-      },
-      duration / (text.length * 10),
-    );
+    if (!trigger && !animateOnLoad) return; // Avoid running if animation is not triggered
+
+    const interval = setInterval(() => {
+      if (iterations.current < text.length) {
+        setDisplayText((t) =>
+          t.map((l, i) =>
+            l === " "
+              ? l
+              : i <= iterations.current
+              ? text[i]
+              : alphabets[getRandomInt(26)]
+          )
+        );
+        iterations.current++;
+      } else {
+        setTrigger(false);
+        clearInterval(interval);
+      }
+    }, duration / text.length);
+
     // Clean up interval on unmount
     return () => clearInterval(interval);
   }, [text, duration, trigger, animateOnLoad]);
@@ -73,14 +66,14 @@ export default function HyperText({
       className="overflow-hidden py-2 flex cursor-default scale-100"
       onMouseEnter={triggerAnimation}
     >
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="sync">
         {displayText.map((letter, i) => (
           <motion.h1
             key={i}
             className={cn("font-mono", letter === " " ? "w-3" : "", className)}
             {...framerProps}
           >
-            {letter.toUpperCase()}
+            {letter}
           </motion.h1>
         ))}
       </AnimatePresence>
