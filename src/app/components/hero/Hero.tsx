@@ -1,32 +1,11 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import GradualSpacing from "@/components/magicui/gradual-spacing";
-
 import HyperText from "@/components/magicui/hyper-text";
-import { useState, useEffect } from "react";
 import { Plus } from "lucide-react";
 import { FaRegHandPointUp, FaUniversalAccess } from "react-icons/fa6";
 import { FaGlobeAmericas } from "react-icons/fa";
 
-const useIsSmallScreen = (breakpoint = 640) => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < breakpoint);
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, [breakpoint]);
-
-  return isSmallScreen;
-};
-
 const Hero = () => {
-  const isSmallScreen = useIsSmallScreen();
-
   return (
     <section className="flex flex-col items-center justify-center  rounded-xl relative  lg:mt-30 mt-10">
       <div className="border p-10 relative md:h-[550px] flex flex-col items-center justify-center w-full">
