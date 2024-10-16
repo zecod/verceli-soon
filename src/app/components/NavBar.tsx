@@ -1,6 +1,6 @@
 const NavBar = () => {
   return (
-    <div className=" flex items-center gap-2 py-2">
+    <div className=" flex items-center gap-2 py-5">
       <div className="size-6  p-0 ">
         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

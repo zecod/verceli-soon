@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import { Plus } from "lucide-react";
 import { FaRegHandPointUp, FaUniversalAccess } from "react-icons/fa6";
 import { FaGlobeAmericas } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
 
 const useIsSmallScreen = (breakpoint = 640) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -50,31 +49,6 @@ const Hero = () => {
               </div>
             </BlurFade>
           </div>
-
-          {/* <BlurFade delay={0.5} inView className="my-4 md:my-0">
-            <div className="flex gap-3">
-              <BlurFade delay={1} inView>
-                <Button
-                  className="rounded-xl"
-                  variant={"default"}
-                  size={isSmallScreen ? "sm" : "lg"}
-                  onClick={() => window.location.assign("/pricing")}
-                >
-                  Get started
-                </Button>
-              </BlurFade>
-              <BlurFade delay={1.2} inView>
-                <Button
-                  className="rounded-xl"
-                  variant={"outline"}
-                  size={isSmallScreen ? "sm" : "lg"}
-                  onClick={() => window.location.assign("/pricing")}
-                >
-                  View plans
-                </Button>
-              </BlurFade>
-            </div>
-          </BlurFade> */}
         </div>
       </div>
 
