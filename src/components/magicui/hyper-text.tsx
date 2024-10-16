@@ -29,7 +29,6 @@ export default function HyperText({
   const [displayText, setDisplayText] = useState(text.split(""));
   const [trigger, setTrigger] = useState(false);
   const iterations = useRef(0); // Fixed typo
-  const isFirstRender = useRef(true);
 
   const triggerAnimation = () => {
     iterations.current = 0;
