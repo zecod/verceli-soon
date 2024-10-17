@@ -105,22 +105,6 @@ const Hero = () => {
               className="w-40 px-2"
             />
           </BlurFade>
-          <BlurFade delay={0.25} inView className="hidden dark:block">
-            {" "}
-            <img
-              src="https://vercel.com/mktng/_next/static/media/logo-aws-color-dark.1578b18d.svg"
-              alt="aws logo"
-              className="w-20 h-10 px-2 "
-            />
-          </BlurFade>
-          <BlurFade delay={0.25} inView className="dark:hidden block">
-            {" "}
-            <img
-              src="https://vercel.com/mktng/_next/static/media/logo-aws-color-light.0f209fbb.svg"
-              alt="aws logo"
-              className="w-20 h-10 px-2 "
-            />
-          </BlurFade>
 
           <BlurFade delay={0.25} inView>
             {" "}
