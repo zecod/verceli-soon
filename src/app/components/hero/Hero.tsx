@@ -13,9 +13,13 @@ const Hero = () => {
         <Plus className="absolute -bottom-3 -right-3 text-zinc-600 " />
         <div className="flex flex-col items-center justify-center md:my-40">
           <GradualSpacing
-            className="font-display text-center text-xl font-bold tracking-[-0.1em]  md:text-6xl lg:text-7xl  md:leading-[5rem] text-wrap max-w-4xl hideen md:block "
+            className="hidden md:blockfont-display text-center text-2xl font-bold tracking-[-0.1em]  md:text-6xl lg:text-7xl  md:leading-[5rem] text-wrap max-w-4xl hideen md:block "
             text="Which Words Will Speak Next?"
           />
+
+          <div className="text-[24px] leading-[32px] tracking-[0px] text-center md:hidden ">
+            Which Words Will Speak Next?
+          </div>
 
           <div className="w-full flex justify-center my-2 md:my-5">
             <BlurFade delay={0.25 * 2} inView>
@@ -23,7 +27,7 @@ const Hero = () => {
                 className="hidden md:block text-sm md:text-lg font-bold text-muted-foreground "
                 text="Text Transformed into Voice, One Word at a Time."
               />
-              <div className="text-sm md:text-lg font-bold text-muted-foreground md:hidden ">
+              <div className="text-sm md:text-lg font-bold text-muted-foreground md:hidden text-center">
                 Text Transformed into Voice, One Word at a Time.
               </div>
             </BlurFade>
@@ -60,7 +64,7 @@ const Hero = () => {
         </BlurFade>
 
         <BlurFade delay={0.25 * 3} inView>
-          <div className="p-8 space-y-8 pl-4">
+          <div className="p-8 space-y-8">
             <FaUniversalAccess size={32} />
             <div>
               <span className="text-[20px] leading-[26px] tracking-[-0.4px] text-[#4A4A4A] dark:text-[#EDEDED]">
@@ -99,6 +103,22 @@ const Hero = () => {
               src="https://www.vectorlogo.zone/logos/google/google-ar21.svg"
               alt="google logo"
               className="w-40 px-2"
+            />
+          </BlurFade>
+          <BlurFade delay={0.25} inView className="hidden dark:block">
+            {" "}
+            <img
+              src="https://vercel.com/mktng/_next/static/media/logo-aws-color-dark.1578b18d.svg"
+              alt="aws logo"
+              className="w-20 h-10 px-2 "
+            />
+          </BlurFade>
+          <BlurFade delay={0.25} inView className="dark:hidden block">
+            {" "}
+            <img
+              src="https://vercel.com/mktng/_next/static/media/logo-aws-color-light.0f209fbb.svg"
+              alt="aws logo"
+              className="w-20 h-10 px-2 "
             />
           </BlurFade>
 
