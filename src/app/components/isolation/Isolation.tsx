@@ -47,11 +47,11 @@ export const Isolation: React.FC = () => {
         inView
         className="my-24 flex flex-col items-center"
       >
-        <div className="text-[46px] leading-[67.2px] tracking-[-1.4px] lg:text-left text-center">
+        <div className="text-[32px] md:text-[46px] mb-2 md:leading-[67.2px] tracking-[-1.4px] lg:text-left text-center">
           Pure Isolation for Perfect Voice Clones
         </div>
         <BlurFade delay={0.25} inView>
-          <p className="text-[20px] leading-[36px] tracking-[0.1px] text-[#A1A1A1] max-w-xl text-center ">
+          <p className="text-[16px] md:text-[20px] md:leading-[36px] tracking-[0.1px] text-[#A1A1A1] max-w-xl text-center ">
             Isolate voices to create natural, clear voice clones. Get accurate
             results with easy voice separation.
           </p>

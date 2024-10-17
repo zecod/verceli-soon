@@ -51,11 +51,11 @@ export const Features: React.FC = () => {
         inView
         className="my-24 flex flex-col items-center"
       >
-        <div className="text-[46px] leading-[67.2px] tracking-[-1.4px] lg:text-left text-center">
+        <div className="text-[32px] md:text-[46px] mb-2 md:leading-[67.2px] tracking-[-1.4px] lg:text-left text-center">
           Realistic Voice Clones for All Your Projects
         </div>
         <BlurFade delay={0.25} inView>
-          <p className="text-[20px] leading-[36px] tracking-[0.1px] text-[#A1A1A1] max-w-2xl text-center ">
+          <p className="text-[16px] md:text-[20px] md:leading-[36px] tracking-[0.1px] text-[#A1A1A1] max-w-xl text-center">
             Generate realistic voice clones for all your projects, with clear
             and natural sound quality tailored to your needs.
           </p>

@@ -12,10 +12,10 @@ export const SSMLDemo = () => {
         inView
         className="my-40 flex flex-col items-center"
       >
-        <div className="text-[46px] leading-[67.2px] tracking-[-1.4px] lg:text-left text-center">
+        <div className="text-[32px] md:text-[46px] mb-2 md:leading-[67.2px] tracking-[-1.4px] lg:text-left text-center">
           Text-to-Speech with SSML Features
         </div>
-        <p className="text-[20px] leading-[36px] tracking-[0.1px] text-[#A1A1A1] max-w-2xl text-center ">
+        <p className="text-[16px] md:text-[20px] md:leading-[36px] tracking-[0.1px] text-[#A1A1A1] max-w-xl text-center">
           Create lifelike speech from text with SSML, allowing you to control
           tone, pauses, and emphasis for more natural audio.
         </p>

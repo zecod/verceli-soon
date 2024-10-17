@@ -14,10 +14,10 @@ export const AIfeatures = () => {
         inView
         className="mt-20 flex flex-col items-center mb-10"
       >
-        <div className="text-[46px] leading-[67.2px] tracking-[-1.4px] lg:text-left text-center">
+        <div className="text-[32px] md:text-[46px] mb-2 md:leading-[67.2px] tracking-[-1.4px] lg:text-left text-center">
           AI for Audio That Sounds Just the Way You Want
         </div>
-        <p className="text-[20px] leading-[36px] tracking-[0.1px] text-[#A1A1A1] max-w-2xl text-center ">
+        <p className="text-[16px] md:text-[20px] md:leading-[36px] tracking-[0.1px] text-[#A1A1A1] max-w-xl text-center">
           Create custom audio with AI that matches your exact preferences. Get
           the sound you need, tailored to your unique requirements.
         </p>
