@@ -1,5 +1,3 @@
-import { Separator } from "@/components/ui/separator";
-
 export const Footer: React.FC = () => {
   return (
     <div className="p-8 flex  items-center justify-center border">
