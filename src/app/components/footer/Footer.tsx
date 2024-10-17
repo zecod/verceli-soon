@@ -1,6 +1,4 @@
 import { Separator } from "@/components/ui/separator";
-import { PiMoonStarsFill, PiSun } from "react-icons/pi";
-import { Button } from "@/components/ui/button";
 
 export const Footer: React.FC = () => {
   return (

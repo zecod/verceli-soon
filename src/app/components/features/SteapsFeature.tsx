@@ -2,7 +2,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import AnimatedCircularProgressBar from "@/components/ui/animated-circular-progress-bar";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Check, Cloud, File, Trash, Upload, Waves } from "lucide-react";
+import { Check, Cloud, File, Waves } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { FaPause, FaPlay } from "react-icons/fa6";
 

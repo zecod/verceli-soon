@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-
 import { Plus } from "lucide-react";
 import { BsStars } from "react-icons/bs";
 import BlurFade from "@/components/magicui/blur-fade";
