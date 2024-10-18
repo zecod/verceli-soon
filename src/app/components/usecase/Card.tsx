@@ -100,7 +100,7 @@ export const CardVoice: React.FC = () => {
         return (
           <div
             key={index}
-            className={`${"lg.min-w-[190px] lg:max-w-[400px]"} p-8 transition-all duration-900 ease-in-out hover:shadow-lg cursor-pointer flex flex-col items-center justify-center gap-5 border-b border-l flex-1 md:last:border-r md:[&:nth-child(2)]:border-r lg:[&:nth-child(2)]:border-r-0 md:[&:nth-child(4)]:border-r lg:[&:nth-child(4)]:border-r-0 sm:border-r`}
+            className={`${"lg.min-w-[190px] lg:max-w-[400px]"} p-8 transition-all duration-900 ease-in-out hover:shadow-lg cursor-pointer flex flex-col items-center justify-center gap-5 border border-[#1A1A1A] flex-1 `}
           >
             <BlurFade delay={index * 0.1} inView>
               <div className="flex">
